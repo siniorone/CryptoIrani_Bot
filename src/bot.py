@@ -3,7 +3,7 @@ import telebot
 from src.api.api import doge
 from loguru import logger
 
-bot = telebot.TeleBot(os.environ['NASHENAS_BOT_TOKEN'])
+bot = telebot.TeleBot(os.environ['TELEGRAM_BOT_TOKEN'])
 
 
 @bot.message_handler(commands=['start', 'help'])
